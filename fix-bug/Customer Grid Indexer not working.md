@@ -1,9 +1,8 @@
-I apologize because in the previous comment I indicated that the
-Magento \ Customer \ Model \ Indexer \ Source.php file did not exist, while it is actually alive and well.
+Modifying the indexer.xml file the index rebuilding work fine.
 
-However, by modifying the indexer.xml file the index rebuilding work fine.
+Add the below function to the file Source.php:
+>Magento\Customer\Model\Indexer\Source.php
 
-Alternativly is possible add the below function to the file Source.php:
 ~~~php
 public function addAttributeToSelect($attribute, $joinType = false)
 {
